@@ -26,8 +26,8 @@
     "react-intersection-observer": "^9.4.3",
     "resize-observer-polyfill": "^1.5.1",
     "scroller-motion": "^1.2.3",
-    "sharp": "^0.32.0",
-    "touch-cli": "^0.0.1"
+    "touch-cli": "^0.0.1",
+    "@jridgewell/sourcemap-codec": "^1.4.15"
   },
   "devDependencies": {
     "@types/node": "18.15.0",

@@ -6,6 +6,7 @@ const nextConfig = {
   optimizeFonts: false,
   images: {
     domains: ["user-images.githubusercontent.com", "cdn.hashnode.com", "github.com"],
+    unoptimized: true,
   },
   fontLoaders: [
     {
@@ -16,6 +17,8 @@ const nextConfig = {
       },
     },
   ],
+  output: 'export',
+  basePath: '/seea.github.io',
 };
 
 module.exports = nextConfig;

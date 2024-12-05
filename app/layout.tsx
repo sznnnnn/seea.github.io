@@ -11,24 +11,20 @@ const syne = Syne({
 });
 
 export const metadata: Metadata = {
-  title: "Victor Williams — Frontend Engineer",
+  title: "Seea Liu — Frontend Developer",
   description:
-    "Frontend Engineer and Web Designer, currently at Kora. Focused on interfaces and experiences, working remotely from Lagos, Nigeria.",
+    "Frontend Developer and Web Designer. Focused on creating elegant and efficient web experiences.",
   generator: "Next.js",
-  applicationName: "Victor Williams",
+  applicationName: "Seea Liu",
   keywords: [
     "freelance",
     "developer",
-    "freelance developer",
     "frontend",
     "react",
     "frontend developer",
-    "frontend engineer",
     "creative",
     "creative developer",
-    "creative engineer",
     "tech",
-    "nigeria",
     "software",
     "software developer",
     "portfolio",
@@ -37,17 +33,17 @@ export const metadata: Metadata = {
   ],
   colorScheme: "dark",
   openGraph: {
-    title: "Victor Williams — Frontend Engineer",
+    title: "Seea Liu — Frontend Developer",
     description:
-      "Frontend Engineer and Web Designer, currently at Kora. Focused on interfaces and experiences, working remotely from Lagos, Nigeria.",
-    url: "https://www.victorwilliams.me/",
-    siteName: "www.victorwilliams.me",
+      "Frontend Developer and Web Designer. Focused on creating elegant and efficient web experiences.",
+    url: "https://sznnnnn.github.io/seea.github.io/",
+    siteName: "Seea Liu Portfolio",
     images: [
       {
-        url: "https://user-images.githubusercontent.com/84178696/228620835-e3cc5c9b-72fc-4f54-a628-407ef7b650f5.png",
+        url: "profile.jpg",
         width: 1200,
         height: 630,
-        alt: "Victor Williams — Frontend Engineer",
+        alt: "Seea Liu — Frontend Developer",
       },
     ],
     locale: "en-US",
@@ -55,14 +51,11 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Victor Williams — Frontend Engineer",
+    title: "Seea Liu — Frontend Developer",
     description:
-      "Frontend Engineer and Web Designer, currently at Kora. Focused on interfaces and experiences, working remotely from Lagos, Nigeria.",
-    creator: "victorwill__",
-    creatorId: "1243720976552144897",
-    images: [
-      "https://user-images.githubusercontent.com/84178696/228620835-e3cc5c9b-72fc-4f54-a628-407ef7b650f5.png",
-    ],
+      "Frontend Developer and Web Designer. Focused on creating elegant and efficient web experiences.",
+    creator: "SeeaXin",
+    images: ["profile.jpg"],
   },
   robots: {
     index: true,
