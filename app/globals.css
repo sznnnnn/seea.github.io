@@ -37,3 +37,25 @@ body {
 body {
   overflow-y: hidden;
 }
+
+/* 添加浏览器兼容性前缀 */
+* {
+  /* 触摸操作 */
+  touch-action: manipulation;
+
+  /* 用户选择 */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  /* 文本大小调整 */
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+/* 背景裁剪 */
+.bg-clip-text {
+  -webkit-background-clip: text;
+  background-clip: text;
+}

@@ -5,20 +5,21 @@ const nextConfig = {
   },
   optimizeFonts: false,
   images: {
-    domains: ["user-images.githubusercontent.com", "cdn.hashnode.com", "github.com"],
     unoptimized: true,
-  },
-  fontLoaders: [
-    {
-      loader: "@next/font/google",
-      options: {
-        subsets: ["latin"],
-        weight: ["400", "500", "600", "700", "800"],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**',
       },
-    },
-  ],
+    ],
+  },
   output: 'export',
   basePath: '/seea.github.io',
+  assetPrefix: '/seea.github.io',
+  webpack: (config) => {
+    config.resolve.fallback = { fs: false };
+    return config;
+  },
 };
 
 module.exports = nextConfig;

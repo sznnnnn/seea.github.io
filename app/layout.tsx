@@ -2,7 +2,6 @@ import "./globals.css";
 import { ReactNode } from "react";
 import type { Metadata } from "next";
 import { Syne } from "next/font/google";
-import { Analytics } from "@vercel/analytics/react";
 
 const syne = Syne({
   subsets: ["latin"],
@@ -71,6 +70,20 @@ export const metadata: Metadata = {
     },
   },
   category: "technology",
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 1,
+  },
+  charSet: 'utf-8',
+  icons: {
+    icon: '/favicon.ico',
+  },
+  other: {
+    'x-content-type-options': 'nosniff',
+    'content-security-policy': "default-src 'self'",
+    'cache-control': 'public, max-age=31536000, immutable'
+  },
 };
 
 type RootLayoutProps = {
@@ -79,12 +92,17 @@ type RootLayoutProps = {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="en">
+    <html lang="zh-CN">
+      <head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta httpEquiv="X-Content-Type-Options" content="nosniff" />
+        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
+      </head>
       <body
         className={`${syne.className} scroll-smooth scrollbar-thin scrollbar-track-[#0E1016] scrollbar-thumb-[#212531]`}
       >
         {children}
-        <Analytics />
       </body>
     </html>
   );
