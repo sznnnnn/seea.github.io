@@ -43,19 +43,34 @@ const About = () => {
           <div className="mb-24 flex w-[100%] flex-col gap-4 text-[18px] font-normal leading-relaxed tracking-wide text-[#e4ded7]/80 sm:mb-32 md:mb-40 md:gap-6 md:text-[16px] md:leading-normal lg:mt-0 lg:mb-16 lg:max-w-[30%] lg:text-[18px]">
             {/* Frontend Tools 部分 */}
             <div className="flex flex-col gap-4 md:gap-3">
-              <AnimatedTitle text="Frontend Tools" className="..." />
+              <AnimatedTitle 
+                text="Frontend Tools" 
+                className="text-[16px] font-bold text-[#e4ded7] md:text-[20px]"
+                wordSpace="mr-[0.25em]"
+                charSpace="mr-[0.01em]"
+              />
               <AnimatedBody text="JavaScript (ES6+), React, Next.js..." />
             </div>
 
             {/* UI Libraries 部分 */}
             <div className="flex flex-col gap-3">
-              <AnimatedTitle text="UI Libraries" className="..." />
+              <AnimatedTitle 
+                text="UI Libraries" 
+                className="text-[16px] font-bold text-[#e4ded7] md:text-[20px]"
+                wordSpace="mr-[0.25em]"
+                charSpace="mr-[0.01em]"
+              />
               <AnimatedBody text="CSS3/SCSS/SASS, Tailwind CSS..." />
             </div>
 
             {/* Design Tools 部分 */}
             <div className="flex flex-col gap-3">
-              <AnimatedTitle text="Design Tools" className="..." />
+              <AnimatedTitle 
+                text="Design Tools" 
+                className="text-[16px] font-bold text-[#e4ded7] md:text-[20px]"
+                wordSpace="mr-[0.25em]"
+                charSpace="mr-[0.01em]"
+              />
               <AnimatedBody text="Figma, Framer, FigJam..." />
             </div>
           </div>

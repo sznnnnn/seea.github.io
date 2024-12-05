@@ -2,13 +2,12 @@ import { useEffect } from "react";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
-type AnimatedTitleProps = {
+interface AnimatedTitleProps {
   text: string;
   className: string;
-  wordSpace: string;
-  charSpace: string;
-  delay?: number;
-};
+  wordSpace?: string;
+  charSpace?: string;
+}
 
 export default function AnimatedTitle({
   text,
