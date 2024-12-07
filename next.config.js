@@ -9,7 +9,7 @@ const nextConfig = {
     unoptimized: true,
     domains: ["user-images.githubusercontent.com", "cdn.hashnode.com", "github.com"],
   },
-  basePath: process.env.NODE_ENV === 'production' ? '/seea.github.io' : '',
+  basePath: '/seea.github.io',
   assetPrefix: process.env.NODE_ENV === 'production' ? '/seea.github.io/' : '',
   fontLoaders: [
     {
